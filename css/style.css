@@ -1,0 +1,51 @@
+.data {
+  background-color: rgb(110, 151, 220);
+  color: white;
+  border-top: 20px solid rgb(0, 0, 0);
+  margin: 0px;
+  padding: 10px;
+  padding-right: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 99%;
+}
+
+.data-child {
+  width: 26%;
+  float: left;
+  color: rgb(30, 31, 117);
+  background-color: rgb(140, 191, 240);
+  margin-left: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hide {
+  visibility: hidden;
+}
+
+.data img {
+  width: 13%;
+  padding-right: 1%;
+  float: left;
+}
+
+p {
+  margin: 4px;
+  margin-left: 8px;
+}
+
+.light {
+  color: rgb(120, 120, 120);
+}
+
+h {
+  font-size: 30px;
+  margin-left: 8px;
+}
+
+hr {
+  margin-top: 6px;
+  border: 1px solid rgb(215, 245, 255);
+
+}
