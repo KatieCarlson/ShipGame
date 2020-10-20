@@ -39,8 +39,8 @@ h {
   padding: 20px;
 }
 .tele {
-  background-image: url('../images/tele.png');
-  /*background-image: none;*/
+  /*background-image: url('../images/tele.png');*/
+  background-image: none;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
