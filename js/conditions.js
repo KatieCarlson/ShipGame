@@ -1,17 +1,21 @@
-var a = document.getElementById('a');
+function jsfunction(choice) {
+  var newVal = 'I decided to ' + choice;
+  elem = document.getElementById('choice');
+  elem.innerHTML = newVal;
 
-// TODO: organize Modal code
-// 1. Make Photos the Modal Button
-// 2. Make Photos and randomly Generate Photos
-// 3. Make Photos Scrollable
-// 4. Make it so that each photo brings up different modal
-// 5. Add button to each Modal that reloads new images
-// 5.1 make it so that you go to splash screen briefly first before new images
-// are reloaded
-// ** until you get back on your ship and in the sea, everything is text
-// based, and you click certain things to make choices
-// ** splash screen before returning to images has some art
-// 6. Cycle through Images and Clicking, make sure that works
+  var para = document.createElement('h2');
+  var node = document.createTextNode('You fool.');
+  para.appendChild(node);
+  var para2 = document.createElement('p');
+  var node2 = document.createTextNode('You point your ship towards the island');
+  para2.appendChild(node2);
+
+  var element = document.getElementById('tele-text');
+  element.appendChild(para);
+  element.appendChild(para2);
+}
+
+var a = document.getElementById('a');
 
 a.onclick = function () {
   // how to troubleshoot
