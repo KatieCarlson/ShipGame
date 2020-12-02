@@ -29,6 +29,15 @@ h {
   font-size: 30px;
   color: white;
 }
+hr {
+  height: 2px;
+  border-width: 0;
+  background-color: black;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
+}
 
 /* main interface divider */
 .info {
@@ -38,8 +47,7 @@ h {
   position: fixed;
   padding: 20px;
 }
-.tele {
-  /*background-image: url('../images/tele.png');*/
+.journal {
   background-image: none;
   background-position: center;
   background-size: cover;
@@ -49,12 +57,37 @@ h {
   left: 30%;
   position: fixed;
 }
+.tele {
+  background-image: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 70%;
+  left: 30%;
+  position: fixed;
+}
+.tele-text {
+  background-image: url('../images/tele.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 70%;
+  left: 30%;
+  position: fixed;
+  display: none;
+  visibility: hidden;
+}
+.ocean {
+  height: 80%;
+  top: 10%;
+}
 img {
   width: 70%;
   height: 100%;
   position: absolute;
   left: 30%;
-  background-color: none;
 }
 .text {
   background-image: url('../images/grunge.png');
@@ -122,10 +155,10 @@ img {
   right: -2px;
 }
 
-.tele p, .tele h {
+.journal p, .journal h {
   color: black;
 }
-.tele-text {
+.journal-text {
   padding: 70px;
 }
 .wrapper {
@@ -163,111 +196,4 @@ a.effect-underline:hover:after {
   opacity: 1;
 	-webkit-transform: scale(1);
 	transform: scale(1);
-}
-
-
-
-
-
-/* Main Footer */
-.data {
-  background-color: rgb(110, 151, 220);
-  color: white;
-  border-top: 20px solid rgb(0, 0, 0);
-  margin: 0px;
-  padding: 10px;
-  padding-right: 20px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 99%;
-}
-
-.data-child {
-  width: 26%;
-  float: left;
-  color: rgb(30, 31, 117);
-  background-color: rgb(140, 191, 240);
-  margin-left: 2%;
-}
-
-.card { box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2); }
-
-/* ship icon */
-.data img {
-  width: 13%;
-  padding-left: 1%;
-  float: left;
-}
-
-.hide { visibility: hidden; }
-
-/* POP-UP */
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-header {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-  padding: 2px 16px;
-  background-color: #5cb85c;
-  color: white;
-}
-
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  margin-top: 100px;
-  padding: 0;
-  border: 1px solid #888;
-  width: 80%;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-  animation-name: animatetop;
-  animation-duration: 0.4s
-}
-
-@keyframes animatetop {
-  from {top: -300px; opacity: 0}
-  to {top: 0; opacity: 1}
 }

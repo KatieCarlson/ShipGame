@@ -9,99 +9,67 @@
   </head>
 
   <body>
-    <div class="images">
-      <img src="images/grunge.png" alt="Background">
-    <div>
+    <div class="images" id="images">
+      <img src="images/journal.png" alt="Background">
+    </div>
 
     <div class="info">
-      <div class="box">
+      <div class="box" id="box">
         <div class="box-inner">
           <h>Ship Stats</h>
           <br></br>
-          <p>Speed: 5 clicks/day</p>
-          <p>Crew Members: 40 people</p>
-          <p>Food Stock: 304 portions</p>
-          <p>Durability: 80/100 health</p>
+          <p id="gold"><b>Gold:</b> 0 pieces</p>
+          <p id="speed"><b>Speed:</b> 0 clicks/day</p>
+          <p id="health"><b>Durability:</b> 0/100 health</p>
+          <p id="crew"><b>Crew Members:</b> 0 people</p>
+          <p id="food"><b>Food Stock:</b> 0 portions</p>
+        </div>
+        <!--<div class="box-inner">
+          <h>Rain Gauge</h>
+          <br></br>
+          <p>Your ship is fast but unstable.  You should avoid storms at all costs
+          or you will be patching many holes in the starboard.</p>
         </div>
         <div class="box-inner">
-          <h>Tool 1</h>
+          <h>Icebox</h>
           <br></br>
-          <p>Your ship is really fast, but also it is really slow.  You should
-            do this thing so that you are better at plundering gold</p>
-        </div>
-        <div class="box-inner">
-          <h>Tool 2</h>
-          <br></br>
-          <p>Your ship is not strong enough to withstand storms.  You should
-          avoid them at all costs, and this strong sail will strengthen your
-          ship just in case you do get lost in a storm.</p>
-        </div>
+          <p>Your food rations will last longer, given your large number of Crew
+          Members.  Don't want to let them go hungry, or you won't be able to plunder!</p>
+        </div>-->
+      </div>
+    </div>
+    <div class="tele" id="tele">
+      <div class="tele-text" id="tele-text" onclick="scenario()">
+        <img src="images/tele.png" alt="Background" style="width: 100%; left: auto; margin: auto; position: relative;">
       </div>
     </div>
 
-    <div class="tele">
-
-      <div class="tele-text" id="tele-text">
-        <h>Captain's Log</h>
-        <h1>ARRRRRGH I'm a Pirate and this is a Header.</h1>
-        <p>This is a paragraph<p/>
-        <p>Your ship is not strong enough to withstand storms.  You should
-          avoid them at all costs, and this strong sail will strengthen your
-          ship just in case you do get lost in a storm.</p>
-        <p>Your ship is really fast, but also it is really slow.  You should
-          do this thing so that you are better at plundering gold</p>
-        <h1>Hello. This is a header</h1>
-        <p>You point your ship towards the island.  Lots of interesting things happen.
-          You wonder if you hae enough food to feed your crew.  You worry about
-          the storm you just passed and if it will come back.<p/>
-        <h2 id="choice">I decided to...
-          <a onclick="jsfunction('Plunder')" href="#" class="effect-underline">Plunder</a>
-          <a onclick="jsfunction('Sail On')" href="#" class="effect-underline">Sail On</a>
+    <div class="journal" id="journal">
+      <div class="journal-text" id="journal-text">
+        <h><center>Instructions</center></h>
+        <hr>
+        <p>Day 1</p>
+        <h2>Approaching the island</h2>
+        <p>The island appeared smaller on the horizon, but as we approach I can see
+        houses built up into a small mountainside.  There are only a few docks, because
+        of the rocky shores.  Along the eastern side of the island are cliffs.
+        We hear faint music, as if the locals are engaged in a festival.  It seems
+        like the perfect time to sneak in.</p>
+        <h2>The crew noisily plays cards on the deck, a few are clearly drunk.</h2>
+        <p>We have two options.</p>
+        <p>We wait until nightfall, row up to the docks and sneak
+          under them.  Perhaps everyone will be tired from the festivities or too
+          distracted to notice a few pirates.<p/>
+        <p>Alternatively, we could take advantage of the festivities and threaten
+        the village with our swords while everyone is all in one place.  Hopefully they
+        have less guards ready on such a celebratory day.  To do this, we sould sail boldy
+        to the docks and move quickly, fighting off villagers if we need to.</p>
+        <h2 id="switch">Begin Playing:
+          <a onclick="choiceStart('switch', 'Begin Playing: &nbsp', 'Set Sail', '')"
+          href="#" class="effect-underline">Set Sail</a>
         </h2>
       </div>
-
     </div>
-
-    <!-- Modal content -->
-    <!-- Trigger/Open The Modal
-    <button id="myBtn">Open Modal</button>-->
-
-    <!-- The Modal
-    <div id="myModal" class="modal">
-      Modal content
-      <div class="modal-content">
-        <div class="modal-header">
-          <span class="close">&times;</span>
-          <h2>Modal Header</h2>
-        </div>
-        <div class="modal-body">
-          <p>Some text in the Modal Body</p>
-          <p>Some other text...</p>
-        </div>
-        <div class="modal-footer">
-          <h3>Modal Footer</h3>
-        </div>
-      </div>
-  </div> -->
-
-    <!--<div class="data card">
-      <img src="images/ship.png" alt="Ship Icon">
-      <div class="data-child card">
-        <h>Ship Stats</h>
-        <hr>
-        <p id="speed"><b>Speed:</b> 5 clicks/day</p>
-        <p id="crew"><b>Crew Members:</b> 40 people</p>
-        <p id="food"><b>Food Stock:</b> 304 portions</p>
-        <p id="gold"><b>Gold:</b> 1,000 pieces</p>
-        <p id="health"><b>Durability:</b> 80/100 health</p>
-      </div>
-      <div id="tool1" class="data-child card hide">
-        <h> Potato </h>
-      </div>
-      <div id="tool2" class="data-child card hide">
-        <h> Potato </h>
-      </div>
-    </div>-->
 
     <!-- scripts -->
     <script src="js/conditions.js"></script>
